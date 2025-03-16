@@ -1,35 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Gadodia | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Yash Gadodia</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+import React from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-    <section id="home" class="hero">
-        <h1>Yash Gadodia</h1>
-        <h2>Cloud & DevOps Engineer | Full Stack Developer | AI & IoT Enthusiast</h2>
-        <p>
-            I specialize in cloud computing, DevOps automation, and full-stack development, 
-            leveraging technologies like AWS, Azure, and Kubernetes to build scalable and secure 
-            applications. With a strong background in cloud infrastructure, system security, 
-            and network architecture, I thrive on solving complex problems and optimizing performance.
-        </p>
-        <a href="#projects" class="btn">View My Projects</a>
-    </section>
-</body>
-</html>
+const HomePage = () => {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white p-10 flex flex-col items-center">
+      <motion.h1
+        className="text-5xl font-bold mb-4"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        {"<Your Name>"}
+      </motion.h1>
+      <motion.h2
+        className="text-xl mb-6 text-gray-400"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        Cloud & DevOps Engineer | AWS | Azure | CI/CD | Automation
+      </motion.h2>
+      <motion.div
+        className="flex space-x-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={30} className="text-gray-400 hover:text-white transition" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size={30} className="text-gray-400 hover:text-white transition" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaEnvelope size={30} className="text-gray-400 hover:text-white transition" />
+        </a>
+      </motion.div>
+    </div>
+  );
+};
+
+export default HomePage;
