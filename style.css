@@ -1,77 +1,37 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e3e8f7, #f4f5fa);
-    color: #333;
+    text-align: center;
 }
 
 header {
-    background-color: transparent;
-    padding: 1rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
-    font-size: 1rem;
 }
 
-.hero {
-    text-align: center;
-    padding: 6rem 2rem;
-    color: #333;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.hero h2 {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    color: #555;
-    font-weight: 600;
-}
-
-.hero p {
-    max-width: 800px;
-    margin: 1rem auto;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.btn {
-    background-color: #6C63FF;
-    color: #fff;
+.button {
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
+    background: #007bff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #5A52E0;
-}
-
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    border-radius: 5px;
 }
