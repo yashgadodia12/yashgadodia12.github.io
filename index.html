@@ -1,44 +1,28 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
-const HomePage = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white p-10 flex flex-col items-center">
-      <motion.h1
-        className="text-5xl font-bold mb-4"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        {"<Your Name>"}
-      </motion.h1>
-      <motion.h2
-        className="text-xl mb-6 text-gray-400"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        Cloud & DevOps Engineer | AWS | Azure | CI/CD | Automation
-      </motion.h2>
-      <motion.div
-        className="flex space-x-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaGithub size={30} className="text-gray-400 hover:text-white transition" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin size={30} className="text-gray-400 hover:text-white transition" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaEnvelope size={30} className="text-gray-400 hover:text-white transition" />
-        </a>
-      </motion.div>
-    </div>
-  );
-};
-
-export default HomePage;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Gadodia | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Yash Gadodia</h1>
+        <p>Cloud Computing | Software Engineer | DevOps</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate software developer with expertise in Cloud Computing, DevOps, and Full-Stack Development.</p>
+        <a href="projects.html" class="button">View My Projects</a>
+    </main>
+</body>
+</html>
