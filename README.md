@@ -13,27 +13,9 @@ In the project directory, you can run:
 
 <br />
 
-> Youtube Channel -
-> Subscribe [Code A Program](https://www.youtube.com/@CodeAProgram) Channel
-
-> Video Link -
-> [Watch Now](https://www.youtube.com/watch?v=YpFK4hUZ-NM)
-
 > Go To [Live Preview](https://codeaprogram-portfolio.web.app/)
 
-> Startup [repository link](https://github.com/Sridhar-C-25/React_portfolio_2_startup)
 
-## You Learn
-
-- react js hooks
-- folder structure
-- tailwind css
-- swiper js
-- react icons
-- react js packages (ex:react-modal)
-- email js
-- aos scroll animation
-- and more....
 
 ---
 
